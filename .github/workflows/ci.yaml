@@ -53,7 +53,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v3
         with:
-          images: cloudproconsulting/spring-security-oauth2-login
+          images: cloudproconsulting/cake-manager
 
       # Login against a Docker registry except on PR
       # https://github.com/docker/login-action
