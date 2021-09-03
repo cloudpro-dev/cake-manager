@@ -8,12 +8,9 @@ returns a 404, so getting this working should be the first priority.
 
 Requirements:
 * By accessing the root of the server (/) it should be possible to list the cakes currently in the system. This must be presented in an acceptable format for a human to read.
-
 * It must be possible for a human to add a new cake to the server.
-
 * By accessing an alternative endpoint (/cakes) with an appropriate client it must be possible to download a list of
   the cakes currently in the system as JSON data.
-
 * The /cakes endpoint must also allow new cakes to be created.
 
 Comments:
@@ -52,8 +49,7 @@ The server-side application is built using the following technology:
 
 [Spring Boot](https://spring.io/projects/spring-boot) - Latest Spring Boot implementation  
 [Spring Security](https://spring.io/projects/spring-security) - Secure web endpoints and OAuth2 client for GitHub access   
-[Spring Data](https://spring.io/projects/spring-data) - JPA based persistence to local database  
-[Spring Docs](https://spring.io/projects/spring-restdocs) - Swagger generation and UI  
+[Spring Data](https://spring.io/projects/spring-data) - JPA based persistence to local database
 [Spring Test]() - Unit and Integration testing  
 [H2](https://www.h2database.com/html/main.html) - Local in-memory database   
 [MapStruct](https://mapstruct.org/) - Mapping library
@@ -225,7 +221,7 @@ curl -X GET http://localhost:8282/cakes
 ```
 
 ## Testing
-When the `package` command is run, all client-side and server-side tests will be executed.
+When the Maven `package` target is run, all client-side and server-side tests will be executed as part of the build.
 
 ### React  (Client-side)
 All testing is performed using the [Jest](https://jestjs.io/docs/tutorial-react) test runner and the React [Testing Library](https://testing-library.com).
@@ -293,7 +289,7 @@ printenv
 
 ## Continuous Integration
 
-Given the use of GitHub for SCM and authentication, the use of [GitHub Actions workflows](https://docs.github.com/en/actions) to provide Continuous Integration (CI) functions was an obvious choice.
+Given the use of GitHub for SCM and authentication, the use of [GitHub Actions](https://docs.github.com/en/actions) to provide Continuous Integration (CI) functions was an obvious choice.
 
 The requirements do not mention Continuous Deployment (CD) but a public Docker Hub image can be used as an input into any deployment process.
 
@@ -324,7 +320,7 @@ The Docker image created in Docker Hub will be tagged based on the type of event
 - Git Tag with a `v` prefix will create/update Docker image tagged `latest`
 - Git Tag with a `v` prefix will create/update Docker image tagged with the version number e.g. `v1.0`
 
-####Important 
+**Important** 
 
 The workflow requires that you have set up two pre-defined [secrets in GitHub](https://docs.github.com/en/actions/reference/encrypted-secrets) with the following identifiers:
 - DOCKERHUB_USERNAME
