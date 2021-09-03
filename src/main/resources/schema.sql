@@ -1,0 +1,10 @@
+DROP TABLE IF EXISTS cakes;
+
+CREATE TABLE cakes (
+    id INTEGER NOT NULL AUTO_INCREMENT,
+    title VARCHAR(250) NOT NULL,
+    description VARCHAR(250) NOT NULL,
+    image_url VARCHAR(4000) NOT NULL,
+    created_by VARCHAR(255) NOT NULL,
+    PRIMARY KEY (id)
+);

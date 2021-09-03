@@ -1,0 +1,22 @@
+{
+  "rules": {
+    "linebreak-style": ["error", "windows"],
+    "semi":"off",
+    "no-console": "off"
+  },
+  "ecmaFeatures": {
+    "jsx": true
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true,
+    "mocha": true
+  },
+  "plugins": ["react", "jest", "testing-library"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:jest/recommended", "plugin:testing-library/react"]
+}

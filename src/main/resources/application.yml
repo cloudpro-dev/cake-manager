@@ -1,0 +1,29 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            clientId: ${GITHUB_API_CLIENT_ID}
+            clientSecret: ${GITHUB_API_CLIENT_SECRET}
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  port: 8282
+
+logging:
+  level:
+    org.springframework.security: INFO
+    org.springframework.web.client.RestTemplate: INFO
+
+springdoc:
+  api-docs:
+    enabled: true
+    path: /api-docs
+
