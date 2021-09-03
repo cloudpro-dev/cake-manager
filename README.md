@@ -1,4 +1,5 @@
-[![Docker Image CI](https://github.com/cloudpro-dev/cake-manager/actions/workflows/ci.yaml/badge.svg)](https://github.com/cloudpro-dev/cake-manager/actions/workflows/ci.yaml)
+[![GitHub release](https://img.shields.io/github/release/cloudpro-dev/cake-manager.svg)](https://github.com/cloudpro-dev/spring-security-oauth2-login/releases/latest)
+[![Docker workflow](https://github.com/cloudpro-dev/cake-manager/actions/workflows/docker.yaml/badge.svg)](https://github.com/cloudpro-dev/cake-manager/actions/workflows/docker.yaml)
 
 # Cake Manager Micro Service (fictitious)
 
@@ -297,7 +298,7 @@ The requirements do not mention Continuous Deployment (CD) but a public Docker H
 
 GitHub CI workflow configuration for the project:
 ```shell
-.github/workflows/ci.yaml
+.github/workflows/docker.yaml
 ```
 
 The configuration will perform the following steps:

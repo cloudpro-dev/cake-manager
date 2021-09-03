@@ -12,7 +12,7 @@
 # These values should correspond to a Docker Hub Access Token that you have previous setup
 #
 
-name: Docker Image CI
+name: docker
 
 on:
   push:
