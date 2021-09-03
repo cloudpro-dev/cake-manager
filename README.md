@@ -1,3 +1,5 @@
+[![Docker Image CI](https://github.com/cloudpro-dev/cake-manager/actions/workflows/ci.yaml/badge.svg)](https://github.com/cloudpro-dev/cake-manager/actions/workflows/ci.yaml)
+
 # Cake Manager Micro Service (fictitious)
 
 # Requirements
