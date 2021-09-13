@@ -1,5 +1,6 @@
 [![GitHub release](https://img.shields.io/github/release/cloudpro-dev/cake-manager.svg)](https://github.com/cloudpro-dev/spring-security-oauth2-login/releases/latest)
 [![Docker workflow](https://github.com/cloudpro-dev/cake-manager/actions/workflows/docker.yaml/badge.svg)](https://github.com/cloudpro-dev/cake-manager/actions/workflows/docker.yaml)
+[![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/sqshq/PiggyMetrics/blob/master/LICENCE)
 
 # Cake Manager Micro Service (fictitious)
 
